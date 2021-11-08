@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase 
+
+# Remover extensão do arquivo (exemplo: /arquivo.html para /arquivo)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,L]
+
+
+# Redirecionar internamente as páginas sem extensão para o arquivo correspondente (crucial para o funcionamento da página)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+
+
+
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:elevistudios.com
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?elevistudios.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:elevistudios.com

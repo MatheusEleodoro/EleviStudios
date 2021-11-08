@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+html{
+    background-image: url(/img/intro-carousel_games/1.png);
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+p{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #ffff;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 100px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: max-content;
+    transition: 0.3s;
+}
+p:hover{
+    transition: 0.3s;
+    transform: scale(0.8);
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 25px;
+   
+  }
+}
+</style>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("2021-12-10 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("contador").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("contador").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Elevi Studios</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700|Prompt:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+</head>
+
+<div class="centered">
+    <p id = "contador"></p>
+</div>
+</html>
