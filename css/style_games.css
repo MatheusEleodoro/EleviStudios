@@ -331,7 +331,7 @@ h6 {
   font-size: 15px;
   padding: 10px;
   color: #fff;
-  text-shadow: 3px 3px 9px #ff3e5b;
+  /*text-shadow: 3px 3px 9px #ff3e5b;*/
   margin-top: -80px;
 }
 #intro .carousel-card span {
@@ -340,7 +340,7 @@ h6 {
   font-weight: 700;
   padding: 5px;
   color: #fff;
-  text-shadow: 3px 3px 5px #ff3e5b;
+  /*text-shadow: 3px 3px 5px #ff3e5b;*/
   position: absolute;
   bottom: 20%;
   left: 0;
