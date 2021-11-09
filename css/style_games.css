@@ -1544,6 +1544,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   #header #logo img {
     max-height: 30px;
+    max-width: 120px;
   }
   #intro h2 {
     font-size: 28px;
