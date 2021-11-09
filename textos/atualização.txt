@@ -1,8 +1,8 @@
 #03/10/2021$
-O Jogo Space King, foi disponibilizado para testes internos, para serem feitas as últimas correções antes do lançamento em teste aberto. o Lançamento do mesmo está previsto para o início de dezembro para IOS e Android.
+O Jogo Space King está disponivel apenas para testes internos e estão sendo feitas as últimas correções, e em seguida será disponivel para alguns usúarios uma versão beta. O mesmo tem lançamento previsto para o início de Dezembro para Android e IOS.
 
 #06/10/2021$
-Refeito design geral do game, novas animações, movimentações, backgrounds e efeitos sonoros. Foi adicionada sistema de vida, gerenciamento de itens, novas missões e inimigos e obstáculos.
+O Design geral do game foi melhorado para uma experiência mais fluida, também foram adicionadas novas animações, movimentações, backgrounds e efeitos sonoros, sistema de vida, gerenciamento de itens, novas missões, novos inimigos e obstáculos.
 
 #01/11/2021$
-Feita integração com Facebook, criado Leaderboard de amigos e global com selos bronze, prata, ouro e diamante para os colaboradores.
+Foi feita a integração com Facebook e criado Leaderboard de amigos e global. Adicionamos também selos bronze, prata, ouro e diamante para os colaboradores, que serão exibidos ao lado da sua foto no Ranking.
