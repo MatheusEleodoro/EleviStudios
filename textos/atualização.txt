@@ -5,4 +5,4 @@ O Jogo Space King está disponivel apenas para testes internos e estão sendo fe
 O Design geral do game foi melhorado para uma experiência mais fluida, também foram adicionadas novas animações, movimentações, backgrounds e efeitos sonoros, sistema de vida, gerenciamento de itens, novas missões, novos inimigos e obstáculos.
 
 #01/11/2021$
-Foi feita a integração com Facebook e criado Leaderboard de amigos e global. Adicionamos também selos bronze, prata, ouro e diamante para os colaboradores, que serão exibidos ao lado da sua foto no Ranking.
+Foi feita a integração com Facebook e criado Leaderboard de amigos e global. Adicionamos também brasões bronze, prata, ouro e diamante, que serão exibidos ao lado da sua foto no Ranking! fique por dentro e descubra como conseguir o seu.
