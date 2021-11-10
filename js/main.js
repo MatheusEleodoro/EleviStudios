@@ -321,6 +321,7 @@
   /*Set Valores*/
   const urlAtt = "/textos/atualização.txt";
   const urlCard ="/textos/card.txt";
+  const urlLink ="/textos/youtube.txt"
   $(window).on("load", function () {
     // Inicialize Texto Card Carousel
 
@@ -338,8 +339,6 @@
       elements[i].style.backgroundImage = path;
     }
     // Inicializa Textos das Novidades
-
-    
     var elementsTexto = document.querySelectorAll(
       "[id=novidades-card-info-text]"
     );
@@ -355,6 +354,13 @@
       }
     });
   });
+
+  //inicializa link youtube video
+  
+  getTextData(urlLink, (data) =>{
+    document.getElementById('yt-video').href = data;
+  });
+
 
   function getTextData(url, callback) {
     fetch(url)
