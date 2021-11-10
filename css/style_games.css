@@ -241,7 +241,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: rgba(124, 2, 2, 0.25) 0px 14px 28px,
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   top: 0;
   left: 100%;
@@ -254,7 +254,7 @@ h6 {
 
 #intro .carousel-card img {
   width: 100%;
-  height: min-content;
+  height: max-content;
   margin-top: -30px;
 }
 
@@ -1577,7 +1577,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     margin-top: 20px;
     font-size: 17px;
-    text-shadow: 3px 3px 8px #ff3e5b;
+  }
+  #intro .carousel-card img {
+    width: 100%;
+    height:auto;
+    margin-top: -30px;
+    background-color: rgba(255, 0, 0, 0.164);
+
   }
 
   #intro p {
