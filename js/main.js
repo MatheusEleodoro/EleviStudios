@@ -339,6 +339,7 @@
     }
     // Inicializa Textos das Novidades
 
+    
     var elementsTexto = document.querySelectorAll(
       "[id=novidades-card-info-text]"
     );
