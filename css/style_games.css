@@ -254,7 +254,7 @@ h6 {
 
 #intro .carousel-card img {
   width: 100%;
-  height: min-content;
+  height: max-content;
   margin-top: -30px;
 }
 
@@ -1577,7 +1577,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     margin-top: 20px;
     font-size: 17px;
-    text-shadow: 3px 3px 8px #ff3e5b;
   }
 
   #intro p {
