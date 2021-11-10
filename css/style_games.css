@@ -241,7 +241,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: rgba(124, 2, 2, 0.25) 0px 14px 28px,
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   top: 0;
   left: 100%;
@@ -1580,7 +1580,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   #intro .carousel-card img {
     width: 100%;
-    height:fit-content;
+    height:auto;
     margin-top: -30px;
     background-color: rgba(255, 0, 0, 0.164);
 
