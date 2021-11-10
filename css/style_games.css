@@ -1578,6 +1578,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 20px;
     font-size: 17px;
   }
+  #intro .carousel-card img {
+    width: 100%;
+    height:fit-content;
+    margin-top: -30px;
+    background-color: rgba(255, 0, 0, 0.164);
+
+  }
 
   #intro p {
     width: 80% !important;
