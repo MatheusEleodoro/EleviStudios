@@ -6,8 +6,10 @@
   <title>Elevi Studios</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
-  <meta content="" name="description">
-
+  <meta property="og:url" content="http://www.elevistudios.com.br"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title"content="Elevi Studios"/>
+  <meta property="og:image" content="img/intro-carousel_games/1.png"/>
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -30,7 +32,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- Main Stylesheet File -->
-  <link href="css/style_games.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -174,15 +176,13 @@
       </div>
     </section>
 
-
-
     <!--PLAYER VIDEO-->
     <section id="videos">
       <div class="videos-container wow fadeInUp" data-wow-delay="0.5s">
         <div class="videos-item">
           <div class="container-modal"><img src="img/thumb.jpg" alt="" class="">
             <div class="btn-modal">
-              <a href="https://youtu.be/2-DLdOrbTTE" class="venobox_custom play-btn" data-vbtype="video"
+              <a id="yt-video" href="" class="venobox_custom play-btn" data-vbtype="video"
                 data-autoplay="true"></a>
             </div>
           </div>
@@ -310,9 +310,9 @@
     </section>
 
     <!--==========================
-      Team Section
+      FUNDADORES
     ============================-->
-    <section id="team">
+    <section id="fundadores">
       <div class="container">
         <div class="section-header wow fadeInUp">
           <h3>FUNDADORES</h3>
@@ -367,8 +367,7 @@
         </div>
       </div>
     </section>
-    <!-- #team -->
-    <!-- #team -->
+
 
     <!--==========================
       Contact Section
@@ -383,22 +382,23 @@
         <div class="row contact-info">
           <div class="col-md-4">
             <div class="social-media" onclick="window.open('https://www.instagram.com/elevistudios','_blank')"> <i
-                class="fab fa-instagram"></i></i>
+                class="fab fa-instagram instagram" aria-hidden="true"></i></i>
               <h3>Instagram</h3>
               <p>@EleviStudios</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="social-media" onclick="window.open('https://twitter.com/EleviStudios','_blank')"> <i
-                class="fa ion-social-twitter"></i>
+                class="fa ion-social-twitter twitter"></i>
               <h3>TWITTER</h3>
               <p>@EleviStudios</p>
             </div>
 
           </div>
           <div class="col-md-4">
-            <div class="social-media" onclick="window.open('mailto:elevi@elevistudios.com')"> <i
-                class="far fa-envelope"></i></i>
+            <div class="social-media" onclick="window.open('mailto:elevi@elevistudios.com')"> 
+              <i class="far fa-envelope mail"></i>
+              <i class="fas fa-envelope-open-text mail-open"></i>
               <h3>Email</h3>
               <p><a href="mailto:elevi@elevistudios.com">elevi@elevistudios.com&nbsp;</a></p>
             </div>
