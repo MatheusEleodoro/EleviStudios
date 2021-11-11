@@ -1405,8 +1405,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 #contact .php-email-form button[type="submit"]:hover {
-  background: #060606;
+  background: #18d26e;
   color: #fff;
+  border: 2px solid rgb(255, 255, 255);
 }
 @-webkit-keyframes animate-loading {
   0% {
