@@ -331,7 +331,6 @@ h6 {
   font-size: 15px;
   padding: 10px;
   color: #fff;
-  /*text-shadow: 3px 3px 9px #ff3e5b;*/
   margin-top: -80px;
 }
 #intro .carousel-card span {
@@ -742,8 +741,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #novidades .novidades-card h4 {
   font-weight: 700;
   font-size: 15px;
-  padding: 10px;
   color: #fff;
+  padding: 20px;
+  text-align:center;
   line-height: 20px;
 }
 #novidades .novidades-card span {
@@ -1558,10 +1558,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 @media (max-width: 768px) {
-  .back-to-top {
-    bottom: 2%;
-    right: 12%;
-  }
   #header #logo h1 {
     font-size: 28px;
   }
@@ -1606,7 +1602,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: auto;
     margin-top: -30px;
   }
-
   #intro p {
     width: 80% !important;
     margin: 0 auto 30px auto;

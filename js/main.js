@@ -176,7 +176,7 @@
       sectionPos * 4 * -1,
     ];
 
-    if (pos.top >= sections[0]) {
+    if (pos.top >= sections[0] - 100) {
       liDes.classList.add("menu-active");
       liNov.classList.remove("menu-active");
       liAss.classList.remove("menu-active");

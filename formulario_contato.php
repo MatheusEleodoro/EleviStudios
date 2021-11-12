@@ -13,7 +13,8 @@ if(empty($email) or empty($subject) or empty($message) ){
 	if ( mail( $to, $subject, $message, $headers ) ) {
       	echo( "ENVIADO" );
     } else {
-      	echo "<font color='RED'>" . $status_error . "</font>";
+      	echo "<font color='RED'>" . $status_error . "</font>";	  
+		  $_POST = array();
     }
 }
   ?> 
