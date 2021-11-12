@@ -1,8 +1,6 @@
 <?php
 $status_error = "ERRO NO ENVIO";
-//ini_set( 'display_errors', 1 );
-//error_reporting( E_ALL );
-$from = "formulariosite@elevistudios.com";
+$from = "contato@elevistudios.com";
 $to = "suporte@elevistudios.com";
 $email = $_POST[ "email" ];
 $subject =utf8_decode($_POST["assunto"]);
