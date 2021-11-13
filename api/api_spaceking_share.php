@@ -21,11 +21,11 @@ if($id != 0 and $id > 0){
     <link href='/img/favicon.png' rel='icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <h1 style='color:green;> $status </h1> 
+    <h1> $status </h1> 
     </body>
     </html>" ;
 }else{
     $status = "REQUEST ERROR";
-    echo "<h1 style='color:red;'> $status </h1>"
+    echo " <h1> $status </h1>"
 }
 ?>
