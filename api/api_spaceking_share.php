@@ -18,7 +18,7 @@ $teste = "OLAR MUNDO";
     <link href='/img/favicon.png' rel='icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <h1> $name </h1> 
+    <h1> '$name' </h1> 
     </body>
     </html>" ;
 ?>
