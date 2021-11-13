@@ -2,7 +2,7 @@
 $id = intval($_GET['id']);		// integer value
 $name = strval($_GET['name']);
 
-echo($name);
+echo($name "E" $id);
 /*
     echo '
     <html>
