@@ -24,7 +24,7 @@ if($id != 0 and $id > 0){
     <link href='/img/favicon.png' rel='icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <p style='color:#18d26e;> $status </p> 
+    <p style='color:#18d26e;'> $status </p> 
     </body>
     </html>" ;
 }else{
