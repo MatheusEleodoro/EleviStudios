@@ -2,7 +2,7 @@
 $id = intval($_GET['id']);		// integer value
 $title = strval($_GET['title']);
 $description = strval($_GET['desc']);
-$status =""
+$status ="";
 
 if($id!=null)
 {
