@@ -3,7 +3,7 @@ $id = intval($_GET['id']);		// integer value
 $name = strval($_GET['name']);
 $score = strval($_GET['score']);
 
-    echo '
+    echo "
     <html>
     <meta charset="utf-8">
     <title>Elevi Studios</title>
@@ -19,5 +19,5 @@ $score = strval($_GET['score']);
     <body>
     <h1> {$name} </h1> 
     </body>
-    </html>' ;
+    </html>" ;
 ?>
