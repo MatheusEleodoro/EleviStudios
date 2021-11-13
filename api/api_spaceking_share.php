@@ -15,7 +15,7 @@ if($id != 0 and $id > 0){
     <title>Space King</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <meta content='' name='keywords'>
-    <meta property='og:url' content='http://www.elevistudios.com.br/spaceking.js'/>
+    <meta property='og:url' content='http://www.elevistudios.com.br/pages/spaceking.html'/>
     <meta property='og:type' content=''/>
     <meta property='og:title'content='$title'/>
     <meta property='og:description' content='$description' />
