@@ -2,7 +2,7 @@
 $id = intval($_GET['id']);		// integer value
 $name = strval($_GET['name']);
 $score = strval($_GET['score']);
-
+$teste = "OLAR MUNDO";
 
     echo "
     <html>
@@ -18,7 +18,7 @@ $score = strval($_GET['score']);
     <link href='img/favicon.png' rel='icon'>
     <link href='img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <h1> HELLO WORLD </h1> 
+    <h1> .$teste. </h1> 
     </body>
     </html>" ;
 ?>
