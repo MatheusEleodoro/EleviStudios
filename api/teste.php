@@ -1,7 +1,7 @@
 <?php 
 $id = intval($_GET['id']);		// integer value
 $name = strval($_GET['name']);
-$score = intval($_GET['score'])
+$score = strval($_GET['score'])
 echo($id);
 echo($name);
 echo($score);
