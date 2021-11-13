@@ -1,4 +1,9 @@
 <?php 
+$id = intval($_GET['id']);		// integer value
+$name = strval($_GET['name']);
+
+echo($name);
+/*
     echo '
     <html>
     <meta charset="utf-8">
@@ -15,5 +20,5 @@
     <body>
     <h1> HELLO </h1> 
     </body>
-    </html>' ;
+    </html>' ;*/
 ?>
