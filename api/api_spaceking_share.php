@@ -1,6 +1,6 @@
 <?php 
 $id = intval($_GET['id']);		// integer value
-$name = 'MATHEUS'//strval($_GET['name']);
+$name = strval($_GET['name']);
 $score = strval($_GET['score']);
 
 
@@ -18,7 +18,7 @@ $score = strval($_GET['score']);
     <link href='img/favicon.png' rel='icon'>
     <link href='img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <h1> MATHEUS  </h1> 
+    <h1> HELLO WORLD </h1> 
     </body>
     </html>" ;
 ?>
