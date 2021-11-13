@@ -2,11 +2,7 @@
 $id = intval($_GET['id']);		// integer value
 $title = strval($_GET['title']);
 $description = strval($_GET['desc']);
-$status ="";
 
-if($id!=null)
-{
-    $status = strtoupper("request successful");
     echo "
     <html>
     <meta charset='utf-8'>
@@ -22,11 +18,9 @@ if($id!=null)
     <link href='/img/favicon.png' rel='icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
-    <h1> $status </h1> 
+    <h1> '$id' </h1> 
+    <h1> '$title' </h1>
+    <h1> '$description' </h1>
     </body>
     </html>" ;
-}else{
-    echo $status
-}
-
 ?>
