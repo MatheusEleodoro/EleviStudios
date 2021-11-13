@@ -13,10 +13,10 @@ $teste = "OLAR MUNDO";
     <meta property='og:url' content='http://www.elevistudios.com.br'/>
     <meta property='og:type' content=''/>
     <meta property='og:title'content='Space King (BETA)'/>
-    <meta property='og:image' content='img/intro-carousel_games/1.png'/>
+    <meta property='og:image' content='/img/intro-carousel_games/1.png'/>
     <meta property='fb:app_id' content='471322710885547'/>
-    <link href='img/favicon.png' rel='icon'>
-    <link href='img/apple-touch-icon.png' rel='apple-touch-icon'>
+    <link href='/img/favicon.png' rel='icon'>
+    <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     <body>
     <h1> $name </h1> 
     </body>
