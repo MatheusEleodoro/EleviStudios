@@ -21,7 +21,7 @@ echo "
 <link href='/img/favicon.png' rel='icon'>
 <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
 <body>
-<h1 style='color:green;> $status </h1> 
+<h1> $status </h1> 
 </body>
 </html>" ;
 
