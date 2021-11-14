@@ -27,20 +27,20 @@ if($id != 0 and $id > 0){
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/android/i.test(userAgent)) {
-            window.open("https://play.google.com/store","_self")
+            window.open('https://play.google.com/store','_self')
             return;
         }
 
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.open("https://www.apple.com/app-store","_self")
+            window.open('https://www.apple.com/app-store','_self')
             return;
         }
-        window.open("https://www.elevistudios.com","_self")
+        window.open('https://www.elevistudios.com','_self')
     }
 
     </script>
 
-    <body onload="choosePlataform()>
+    <body onload='choosePlataform()'>
     </body>
     </html>" ;
 }else{
