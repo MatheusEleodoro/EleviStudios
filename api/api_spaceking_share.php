@@ -3,8 +3,8 @@ $id = intval($_GET['id']);		// integer value
 $title = strval($_GET['title']);
 $description = strval($_GET['desc']);
 $status = "";
-
-
+open_window('http://www.elevistudios.com.br/pages/spaceking.html');
+/*
 if($id != 0 and $id > 0){
     $status = "REQUEST SUCCESSFULY";
     echo "
@@ -29,7 +29,7 @@ if($id != 0 and $id > 0){
 }else{
     $status = "REQUEST ERROR";
     echo "<p style='color:#ff0004;'> $status </p>";
-}
+}*/
 
 function open_window($url){
     echo("<script>window.open($url)</script>");
