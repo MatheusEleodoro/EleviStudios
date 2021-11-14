@@ -25,7 +25,8 @@ if($id != 0 and $id > 0){
     <p style='color:#18d26e;'> $status </p> 
     </body>
     </html>" ;
-    //open_window('/pages/spaceking.html');
+    sleep(3);
+    open_window('/pages/spaceking.html');
 }else{
     $status = "REQUEST ERROR";
     echo "<p style='color:#ff0004;'> $status </p>";
