@@ -21,18 +21,31 @@ if($id != 0 and $id > 0){
     <meta property='fb:app_id' content='$id'/>
     <link href='/img/favicon.png' rel='icon'>
     <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
-    <body>
-    <p style='color:#18d26e;'> $status </p> 
+
+    <script>
+    function choosePlataform() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            window.open("https://play.google.com/store","_self")
+            return;
+        }
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.open("https://www.apple.com/app-store","_self")
+            return;
+        }
+        window.open("https://www.elevistudios.com","_self")
+    }
+
+    </script>
+
+    <body onload="choosePlataform()>
     </body>
     </html>" ;
-    sleep(3);
-    open_window('/pages/spaceking.html');
 }else{
     $status = "REQUEST ERROR";
     echo "<p style='color:#ff0004;'> $status </p>";
 }
 
-function open_window($url){
-    header("Location: $url");
-}
 ?>
