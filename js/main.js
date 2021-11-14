@@ -321,7 +321,7 @@
   /*Set Valores*/
   const urlAtt = "/textos/atualização.txt";
   const urlCard ="/textos/card.txt";
-  const urlLink ="/textos/youtube.txt"
+  const urlLink ="/textos/links.txt"
   $(window).on("load", function () {
     // Inicialize Texto Card Carousel
 
@@ -358,7 +358,7 @@
   //inicializa link youtube video
   
   getTextData(urlLink, (data) =>{
-    document.getElementById('yt-video').href = data;
+    document.getElementById('yt-video').href = data.toString().match('<youtube>(.*)<youtube>')[1];
   });
 
 

@@ -27,7 +27,7 @@ if($id != 0 and $id > 0){
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         getTextData('/textos/links.txt', (data) => {
-            const ytLink = data.toString().match('<youtube>(.*)<youtube>')[1];
+            const defaultLink = "https://elevistudios.com/";
             const appStore = data.toString().match('<appstore>(.*)<appstore>')[1];
             const playStore = data.toString().match('<playstore>(.*)<playstore>')[1];
 
@@ -40,7 +40,7 @@ if($id != 0 and $id > 0){
                 window.open(appStore, '_self')
                 return;
             }
-            window.open(ytLink, '_self')
+            window.open(defaultLink, '_self')
 
         });
     }
