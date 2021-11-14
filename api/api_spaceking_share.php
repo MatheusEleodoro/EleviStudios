@@ -13,7 +13,7 @@ if($id != 0 and $id > 0){
     <title>Space King</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <meta content='' name='keywords'>
-    <meta property='og:url' content='http://www.elevistudios.com.br/pages/spaceking.html'/>
+    <meta property='og:url' content=''/>
     <meta property='og:type' content=''/>
     <meta property='og:title'content='$title'/>
     <meta property='og:description' content='$description' />
@@ -26,18 +26,29 @@ if($id != 0 and $id > 0){
     function choosePlataform() {
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-        if (/android/i.test(userAgent)) {
-            window.open('https://play.google.com/store','_self')
-            return;
-        }
+        getTextData('/textos/links.txt', (data) => {
+            const ytLink = data.toString().match('<youtube>(.*)<youtube>')[1];
+            const appStore = data.toString().match('<appstore>(.*)<appstore>')[1];
+            const playStore = data.toString().match('<playstore>(.*)<playstore>')[1];
 
-        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            window.open('https://www.apple.com/app-store','_self')
-            return;
-        }
-        window.open('https://www.elevistudios.com','_self')
+            if (/android/i.test(userAgent)) {
+                window.open(playStore, '_self')
+                return;
+            }
+
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.open(appStore, '_self')
+                return;
+            }
+            window.open(ytLink, '_self')
+
+        });
     }
-
+    function getTextData(url, callback) {
+        fetch(url)
+            .then((response) => response.text())
+            .then((result) => callback(result));
+    }
     </script>
 
     <body onload='choosePlataform()'>
