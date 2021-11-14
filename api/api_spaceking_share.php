@@ -32,6 +32,6 @@ if($id != 0 and $id > 0){
 }*/
 
 function open_window($url){
-    header("Location: index.html");
+    header("Location: $url");
 }
 ?>
