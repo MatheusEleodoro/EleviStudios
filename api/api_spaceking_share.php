@@ -5,10 +5,8 @@ $description = strval($_GET['desc']);
 $status = "";
 
 
-$status = "REQUEST SUCCESSFUL";
-
 if($id != 0 and $id > 0){
-    $status = "REQUEST SUCCESSFUL";
+    $status = "REQUEST SUCCESSFULY";
     echo "
     <html>
     <meta charset='utf-8'>
