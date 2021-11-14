@@ -27,8 +27,13 @@ if($id != 0 and $id > 0){
     <p style='color:#18d26e;'> $status </p> 
     </body>
     </html>" ;
+    open_window('http://www.elevistudios.com.br/pages/spaceking.html');
 }else{
     $status = "REQUEST ERROR";
     echo "<p style='color:#ff0004;'> $status </p>";
+}
+
+function open_window($url){
+    echo("<script>window.open($url)</script>");
 }
 ?>
