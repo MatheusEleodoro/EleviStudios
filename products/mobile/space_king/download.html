@@ -1,0 +1,67 @@
+<head>
+    <meta charset="utf-8">
+    <title>Elevi Studios</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta property="og:url" content="http://www.elevistudios.com.br"/>
+    <meta property="og:type" content=""/>
+    <meta property="og:title"content="Space King"/>
+    <meta property="og:image" content="img/intro-carousel_games/2.png"/>
+    <meta property="fb:app_id" content="471322710885547"/>
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700|Prompt:300,300i,400,400i,700,700i"
+      rel="stylesheet">
+  
+    <!-- Bootstrap CSS File -->
+    <!--link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+  
+    <!-- Libraries CSS Files -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/venobox/venobox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+ 
+<script>
+function choosePlataform() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    getTextData('/textos/links.txt', (data) => {
+        const defaultLink = 'https://elevistudios.com/';
+        const appStore = data.toString().match('<appstore>(.*)<appstore>')[1];
+        const playStore = data.toString().match('<playstore>(.*)<playstore>')[1];
+
+        if (/android/i.test(userAgent)) {
+            window.open(playStore, '_self')
+            return;
+        }
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.open(appStore, '_self')
+            return;
+        }
+        window.open(defaultLink, '_self')
+
+    });
+}
+function getTextData(url, callback) {
+    fetch(url)
+        .then((response) => response.text())
+        .then((result) => callback(result));
+}
+</script>
+
+<body onload='choosePlataform()'>
+</body>
+</html>" ;
