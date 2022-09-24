@@ -1,4 +1,4 @@
-#03/10/2021$
+#03/10/2022$
 O Jogo Space King está disponivel apenas para testes internos e estão sendo feitas as últimas correções, em seguida será disponibilizado para alguns usúarios uma versão beta. O mesmo tem lançamento previsto para o início de Dezembro para Android e IOS.
 
 #06/10/2021$
