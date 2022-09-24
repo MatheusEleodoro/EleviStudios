@@ -1,14 +1,17 @@
-Options +FollowSymLinks -MultiViews
 RewriteEngine On
-RewriteBase /
+RewriteBase 
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1.php -f
-RewriteRule ^(.+?)/?$ /$1.php [L]
+# Remover extensão do arquivo (exemplo: /arquivo.html para /arquivo)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,L]
 
+
+# Redirecionar internamente as páginas sem extensão para o arquivo correspondente (crucial para o funcionamento da página)
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+?)/?$ /$1.html [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+
+
 
 
 RewriteEngine On
