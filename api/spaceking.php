@@ -7,7 +7,6 @@ $BASE_URL = sprintf("%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != '
 
 switch($type){
     case 'download':
-
         $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
         $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
         $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
@@ -35,7 +34,7 @@ switch($type){
         <meta content='width=device-width, initial-scale=1.0' name='viewport'>
         <meta content='' name='keywords'>
         <meta property='og:url' content=''/>
-        <meta property='og:type' content=''/>
+        <meta property='og:type' content='article'/>
         <meta property='og:title'content='$title'/>
         <meta property='og:description' content='$description' />
         <meta property='og:image' content='../img/shares/share-img.jpg'/>
