@@ -14,11 +14,11 @@ switch($type){
         $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
         
         if ( $Android )
-            header("Location: https://play.google.com/store/apps/details?id=com.EleviStudios.SpaceKing");
+            echo "ANDROID";//header("Location: https://play.google.com/store/apps/details?id=com.EleviStudios.SpaceKing");
         else if ( $iPod || $iPhone || $iPad )
-            header("Location: https://apps.apple.com/us/app/space-king-first-adventure/id1609779654");
+            echo "IPHONE";//header("Location: https://apps.apple.com/us/app/space-king-first-adventure/id1609779654");
         else 
-            header('Location: '.$BASE_URL);
+            echo "PC";//header('Location: '.$BASE_URL);
   
     break;
 
