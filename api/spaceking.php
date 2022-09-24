@@ -1,12 +1,12 @@
 <?php 
-$type = "download";
+$type = strval($_GET['type']);
 $id = intval($_GET['id']);
-$title = strval($_GET['title']);
-$description = strval($_GET['desc']);
+$title = strval($_GET['title']);  
+$description = strval($_GET['description']);
 $BASE_URL = sprintf("%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME']);
 
 switch($type){
-    case 'share':
+    case 'download':
     preg_match('/iPhone|Android|iPad|iPod|webOS/', $_SERVER['HTTP_USER_AGENT'], $matches);
     $os = current($matches);
 
@@ -27,8 +27,9 @@ switch($type){
     break;
 
     case 'share':
-    if($id == null || $title == null || $description == null){
-        header('Location: '.$BASE_URL);
+    if(empty($id) || empty($title) || empty($description)){
+        echo "$id,$title,$description";
+        //header('Location: '.$BASE_URL);
         return;
     }
     echo 
@@ -42,7 +43,7 @@ switch($type){
         <meta property='og:type' content=''/>
         <meta property='og:title'content='$title'/>
         <meta property='og:description' content='$description' />
-        <meta property='og:image' content='../img/shares/img-share-1.png'/>
+        <meta property='og:image' content='../img/shares/share-img.jpg'/>
         <meta property='fb:app_id' content='$id'/>
         <link href='/img/favicon.png' rel='icon'>
         <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
