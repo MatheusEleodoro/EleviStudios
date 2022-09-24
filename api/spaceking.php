@@ -4,12 +4,9 @@ $id = intval($_GET['id']);
 $title = strval($_GET['title']);
 $description = strval($_GET['desc']);
 
-echo "HELLO";
-
-/*
 switch(type){
     
-    $BASE_URL = "%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME']
+    $BASE_URL = "%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'];
 
     case 'download':
     preg_match('/iPhone|Android|iPad|iPod|webOS/', $_SERVER['HTTP_USER_AGENT'], $matches);
@@ -58,6 +55,6 @@ switch(type){
     default: 
         header('Location: '.$BASE_URL);
     break;
-}*/
+}
 
 ?>
