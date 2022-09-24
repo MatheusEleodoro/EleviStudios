@@ -3,11 +3,8 @@ $type = strval($_GET['type']);
 $id = intval($_GET['id']);
 $title = strval($_GET['title']);
 $description = strval($_GET['desc']);
-
+$BASE_URL = "%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'];
 switch(type){
-    
-    $BASE_URL = "%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'];
-
     case 'download':
     preg_match('/iPhone|Android|iPad|iPod|webOS/', $_SERVER['HTTP_USER_AGENT'], $matches);
     $os = current($matches);
@@ -49,7 +46,7 @@ switch(type){
         <link href='/img/favicon.png' rel='icon'>
         <link href='/img/apple-touch-icon.png' rel='apple-touch-icon'>
     </html>
-    "
+    ";
     break;
     
     default: 
