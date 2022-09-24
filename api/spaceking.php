@@ -7,29 +7,24 @@ $BASE_URL = sprintf("%s://%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != '
 
 switch($type){
     case 'download':
-    preg_match('/iPhone|Android|iPad|iPod|webOS/', $_SERVER['HTTP_USER_AGENT'], $matches);
-    $os = current($matches);
 
-        switch($os){
-            case 'iPhone':
-            case 'iPad':
-            case 'iPod':
-                header("Location: https://apps.apple.com/us/app/space-king-first-adventure/id1609779654");
-                break;
-            case 'Android': 
-                header("Location: https://play.google.com/store/apps/details?id=com.EleviStudios.SpaceKing");
-                break;
-    
-            default: 
-                header('Location: '.$BASE_URL);
-            break;
-        }
+        $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
+        $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+        $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
+        $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+        
+        if ( $Android )
+            header("Location: https://play.google.com/store/apps/details?id=com.EleviStudios.SpaceKing");
+        else if ( $iPod || $iPhone || $iPad )
+            header("Location: https://apps.apple.com/us/app/space-king-first-adventure/id1609779654");
+        else 
+            header('Location: '.$BASE_URL);
+  
     break;
 
     case 'share':
     if(empty($id) || empty($title) || empty($description)){
-        echo "$id,$title,$description";
-        //header('Location: '.$BASE_URL);
+        header('Location: '.$BASE_URL);
         return;
     }
     echo 
